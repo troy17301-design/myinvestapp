@@ -53,7 +53,7 @@ if submitted:
                 
                 # 3. 呼叫 Gemini API (開啟 Google 搜尋功能)
                 response = client.models.generate_content(
-                    model='gemini-3.5-flash', # 使用快速且支援搜尋的模型
+                    model='gemini-2.5-flash', # 使用快速且支援搜尋的模型
                     contents=prompt,
                     config=types.GenerateContentConfig(
                         system_instruction=system_instruction,
